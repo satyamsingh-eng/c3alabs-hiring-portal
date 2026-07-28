@@ -148,12 +148,12 @@
   </div>
 
   <nav class="nav-menu">
-    <a href="index.html" class="nav-link active">Overview</a>
+    <a href="index.html" class="nav-link">Overview</a>
     <a href="engineering.html" class="nav-link">Engineering (221)</a>
     <a href="sales.html" class="nav-link">Sales</a>
     <a href="marketing.html" class="nav-link">Marketing</a>
     <a href="qa.html" class="nav-link">QA</a>
-    <a href="product.html" class="nav-link">Product</a>
+    <a href="product.html" class="nav-link active">Product</a>
     <a href="domain-experts.html" class="nav-link">Domain Experts</a>
     <a href="report.html" class="nav-link">Hiring Report & Notes</a>
   </nav>
@@ -165,36 +165,27 @@
 </header>
 
 <div class="analyst-box">
-  <div class="analyst-label">Analyst Note — Talent Intelligence OS</div>
-  <div class="analyst-text">Welcome to C3ALABS Multi-Domain Talent OS. Use the top navigation menu to jump directly to dedicated domain sub-pages (Engineering, Sales, Marketing, QA, Product, Domain Experts) or review the comprehensive Hiring Report. All 221 Forward Deployed Engineer candidates are mapped under Engineering.</div>
+  <div class="analyst-label">Analyst Note — Agentic Workflow Product Management</div>
+  <div class="analyst-text">Candidates skilled in turning operational friction into clean agent specifications, defining approval checkpoints, and managing multi-agent UX interactions.</div>
 </div>
 
-<section class="stats-bar">
-  <div class="stat-card"><div class="stat-lbl">Total Pipeline</div><div class="stat-val">227</div></div>
-  <div class="stat-card"><div class="stat-lbl">Engineering (FDE)</div><div class="stat-val">221</div></div>
-  <div class="stat-card"><div class="stat-lbl">Shortlisted Profiles</div><div class="stat-val">25</div></div>
-  <div class="stat-card"><div class="stat-lbl">Average Match Score</div><div class="stat-val">93%</div></div>
-</section>
-
-<div class="layout">
+<div class="layout" style="margin-top:20px;">
   <aside class="sidebar">
     <div class="filter-sec">
-      <div class="filter-head">Search Candidate</div>
-      <input type="text" id="searchInput" class="search-input" placeholder="Search name, role, company..." oninput="render()">
+      <div class="filter-head">Search Product</div>
+      <input type="text" id="searchInput" class="search-input" placeholder="Search product skills..." oninput="render()">
     </div>
     <div class="filter-sec">
       <div class="filter-head">Experience Level</div>
-      <label class="check-row"><input type="checkbox" value="1-2 Years" class="exp-filter" onchange="render()" checked> 1–2 Years</label>
       <label class="check-row"><input type="checkbox" value="2-4 Years" class="exp-filter" onchange="render()" checked> 2–4 Years</label>
-      <label class="check-row"><input type="checkbox" value="5+ Years" class="exp-filter" onchange="render()" checked> 5+ Years</label>
     </div>
   </aside>
 
   <main class="content">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
       <div>
-        <h2 style="font-size:18px; font-weight:700;">All Candidates Pipeline</h2>
-        <div style="font-size:12px; color:var(--t2);">Showing <span id="countDisplay">0</span> candidates across all domains</div>
+        <h2 style="font-size:18px; font-weight:700;">Product Development Candidates</h2>
+        <div style="font-size:12px; color:var(--t2);">Showing <span id="countDisplay">0</span> candidates in Product Development</div>
       </div>
     </div>
     <div class="cards-grid" id="cardGrid"></div>
@@ -4791,7 +4782,7 @@ const CANDIDATES = [
     "projectDescription": "Authored compliance and approval record database requirements for wealth management firms."
   }
 ];
-const DOMAIN_FILTER = "ALL";
+const DOMAIN_FILTER = "PRODUCT DEVELOPMENT";
 
 let currentCandidateId = null;
 
